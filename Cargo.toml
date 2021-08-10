@@ -1,0 +1,17 @@
+[package]
+name = "ctr"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+nix = "0.22.0"
+anyhow = "1.0.42"
+thiserror = "1.0.26"
+rlimit = "0.6.2"
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+codegen-units = 1
+panic = "abort"
