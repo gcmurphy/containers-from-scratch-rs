@@ -8,8 +8,8 @@ Like the original there is still a lot that can be added to further isolate the 
 container part at a later stage.
 
 #### Usage
-
-`sudo cargo run /bin/sh`
+1. `cargo build`
+2. `sudo target/debug/ctr /bin/sh`
 
 ##### Caveats
 
